@@ -2,13 +2,13 @@
 
 ### A flat theme for Twitter Bootstrap 3
 
+Check out the demo at: [cardeostrap.cardeo.ca](http://cardeostrap.cardeo.ca)
+
 Version: 1.0
 
 Published: October 30, 2013
 
 Author: Matt Lambert
-
-Web: http://cardeo.ca
 
 ### License
 
