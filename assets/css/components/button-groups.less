@@ -1,0 +1,49 @@
+/*
+BUTTON GROUPS
+*/
+
+.btn-group {
+  font-size: @font-size;
+  min-width: 0;
+
+  .round-corners;
+}
+
+.btn-toolbar {
+  font-size: @font-size;
+}
+
+.btn-group > .btn, 
+.btn-group > .dropdown-menu, 
+.btn-group > .popover {
+  font-size: @font-size;
+  min-width: 0;
+}
+
+.btn-group > .btn:first-child {
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.btn-group > .btn:last-child, 
+.btn-group > .dropdown-toggle {
+  -webkit-border-top-right-radius: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  -moz-border-radius-topright: 2px;
+  -moz-border-radius-bottomright: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.btn-group > .btn + .btn {
+  margin-left: -5px;
+}
+
+.btn-group.open .btn.dropdown-toggle {
+  background: @third-background;
+  .transition;
+}

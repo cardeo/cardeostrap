@@ -1,0 +1,97 @@
+// VARIABLES
+
+
+// Color Palette
+// Palette by http://flatuicolors.com/ 
+@red: #e74c3c;
+@red2: #c0392b;
+@blue: #3498db;
+@blue2: #2980b9;
+@green: #2ecc71;
+@green2: #27ae60;
+@yellow: #f1c40f;
+@yellow2: #f39c12;
+@orange: #e67e22;
+@orange2: #d35400;
+@teal: #1abc9c;
+@teal2: #16a085;
+@purple: #9b59b6;
+@purple2: #8e44ad;
+@steel-grey: #34495e;
+@steel-grey2: #2c3e50;
+@off-white: #ecf0f1;
+@light-grey: #bdc3c7;
+@grey: #95a5a6;
+@medium-grey: #7f8c8d;
+
+// Other Colors 
+@white: #fff;
+@dark-grey: #333;
+@black: #232323;
+
+// global backgrounds 
+@primary-background: @white;
+@secondary-background: @off-white;
+@inverse-background: @dark-grey;
+
+// typography 
+@body-copy: "Helvetica Neue", helvetica, arial, verdana, sans-serif;
+@heading-copy: "Helvetica Neue", helvetica, arial, verdana, sans-serif;
+@base-font-size: 16px;
+@font-size: 1em;
+@base-line-height: 1.428571429;
+
+// global text colors 
+@primary-text: @dark-grey;
+@light-text: @light-grey;
+@loud-text: @black;
+@inverse-text: @white;
+@code-text: @red;
+@pre-text: @blue;
+
+// global links 
+@primary-link-color: @blue;
+@primary-link-color-hover: @black;
+
+// global borders 
+@border-color: @light-grey;
+@border-size: 1px;
+@border-type: solid;
+@border-focus: @blue;
+
+// global layout 
+@margin: 1em;
+@padding: 1em;
+
+// MIXINS
+
+.round-corners (@radius: 5px) {
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.box-shadow (@shadow: none) {
+  -moz-box-shadow: @shadow;
+  -webkit-box-shadow: @shadow;
+  box-shadow: @shadow;
+}
+
+.transition (@transition: background .1s linear) {
+  -moz-transition: @transition;
+  -webkit-transition: @transition;
+  transition: @transition;
+}
+
+.box-sizing (@box-sizing: border-box) {
+  -moz-box-sizing: @box-sizing; 
+  -webkit-box-sizing: @box-sizing;  
+  -ms-box-sizing: @box-sizing;
+  box-sizing: @box-sizing;
+}
+
+.background-clip (@background-clip: padding-box) {
+  -moz-background-clip: @background-clip;
+  -webkit-background-clip: @background-clip;
+  background-clip: @background-clip;
+}

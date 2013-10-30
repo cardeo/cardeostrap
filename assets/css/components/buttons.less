@@ -1,0 +1,228 @@
+/*
+BUTTONS
+*/
+
+@button-default-text: @primary-text;
+@button-default-text-hover: @primary-text;
+@button-default-background: @white;
+@button-default-background-hover: @off-white;
+@button-default-border-color: @light-grey;
+@button-default-border-color-hover: @light-grey;
+@button-default-font-size: (@font-size - 0.125);
+@button-default-typecase: uppercase;
+
+@button-primary-text: @white;
+@button-primary-background: @blue;
+@button-primary-border-color: @blue;
+@button-primary-text-hover: @white;
+@button-primary-background-hover: @blue2;
+@button-primary-border-color-hover: @blue2;
+
+@button-info-text: @white;
+@button-info-background: @teal;
+@button-info-border-color: @teal;
+@button-info-text-hover: @white;
+@button-info-background-hover: @teal2;
+@button-info-border-color-hover: @teal2;
+
+@button-success-text: @white;
+@button-success-background: @green;
+@button-success-border-color: @green;
+@button-success-text-hover: @white;
+@button-success-background-hover: @green2;
+@button-success-border-color-hover: @green2;
+
+@button-warning-text: @white;
+@button-warning-background: @yellow;
+@button-warning-border-color: @yellow;
+@button-warning-text-hover: @white;
+@button-warning-background-hover: @yellow2;
+@button-warning-border-color-hover: @yellow2;
+
+@button-danger-text: @white;
+@button-danger-background: @red;
+@button-danger-border-color: @red;
+@button-danger-text-hover: @white;
+@button-danger-background-hover: @red2;
+@button-danger-border-color-hover: @red2;
+
+@button-inverse-text: @white;
+@button-inverse-background: @steel-grey;
+@button-inverse-border-color: @steel-grey;
+@button-inverse-text-hover: @white;
+@button-inverse-background-hover: @steel-grey2;
+@button-inverse-border-color-hover: @steel-grey2;
+
+@button-disabled-background: @light-grey;
+@button-disabled-text: @grey;
+
+/* DEFAULT BUTTON */
+.btn {
+  background-color: @button-default-background;
+  border: @border-color @border-type @border-size;
+  color: @button-default-text;
+  cursor: pointer;
+  font-size: @button-default-font-size;
+  display: inline-block;
+/*  *display: inline; */
+  margin-bottom: 0;
+  outline: 0;
+  text-decoration: none;
+  white-space: nowrap;
+  text-transform: @button-default-typecase;
+  text-align: center;
+  text-shadow: none;
+  background-image: none;
+  font-family: @heading-copy;
+  font-weight: 700;
+
+  .round-corners;
+  .box-shadow;
+  .transition;
+}
+
+.btn:hover,
+.btn:active {
+  background: @button-default-background-hover;
+  color: @button-default-text-hover;
+  text-decoration: none;
+
+  .transition;
+}
+
+/* DEFAULT BUTTON */
+.btn-default,
+a.btn-default {
+  border: @border-size @border-type @button-default-border-color;
+  color: @button-default-text;
+  background-color: @button-default-background;
+}
+
+.btn-default:hover,
+.btn-default:active {
+  border: @border-size @border-type @button-default-border-color-hover;
+  color: @button-default-text-hover;
+  background: @button-default-background-hover;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary,
+a.btn-primary {
+  border: @border-size @border-type @button-primary-border-color;
+  color: @button-primary-text;
+  background: @button-primary-background;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  border: @border-size @border-type @button-primary-border-color-hover;
+  color: @button-primary-text;
+  background: @button-primary-background-hover;
+}
+
+/* INFO BUTTON */
+.btn-info,
+a.btn-info {
+  border: @border-size @border-type @button-info-border-color;
+  color: @button-info-text;
+  background: @button-info-background;
+}
+
+.btn-info:hover,
+.btn-info:active {
+  border: @border-size @border-type @button-info-border-color-hover;
+  color: @button-info-text;
+  background: @button-info-background-hover;
+}
+
+/* SUCCESS BUTTON */
+.btn-success,
+a.btn-success {
+  border: @border-size @border-type @button-success-border-color;
+  color: @button-success-text;
+  background: @button-success-background;
+}
+
+.btn-success:hover,
+.btn-success:active {
+  border: @border-size @border-type @button-success-border-color-hover;
+  color: @button-success-text;
+  background: @button-success-background-hover;
+}
+
+/* WARNING BUTTON */
+.btn-warning,
+a.btn-warning  {
+  border: @border-size @border-type @button-warning-border-color;
+  color: @button-warning-text;
+  background: @button-warning-background;
+}
+
+.btn-warning:hover,
+.btn-warning:active {
+  border: @border-size @border-type @button-warning-border-color-hover;
+  color: @button-warning-text;
+  background: @button-warning-background-hover;
+}
+
+/* DANGER BUTTON */
+.btn-danger,
+a.btn-danger {
+  border: @border-size @border-type @button-danger-border-color;
+  color: @button-danger-text;
+  background: @button-danger-background;
+}
+
+.btn-danger:hover,
+.btn-danger:active {
+  border: @border-size @border-type @button-danger-border-color-hover;
+  color: @button-danger-text;
+  background: @button-danger-background-hover;
+}
+
+/* INVERSE BUTTON */
+.btn-inverse,
+a.btn-inverse {
+  border: @border-size @border-type @button-inverse-border-color;
+  color: @button-inverse-text;
+  background: @button-inverse-background;
+}
+
+.btn-inverse:hover,
+.btn-inverse:active {
+  border: @border-size @border-type @button-inverse-border-color-hover;
+  color: @button-inverse-text;
+  background: @button-inverse-background-hover;
+}
+
+/* LINK BUTTON */
+.btn-link,
+.btn-link:hover,
+.btn-link:active {
+  border: 0;
+  background: transparent;
+}
+
+/* XTRA SMALL BUTTON */
+.btn-xs {
+  font-size: (@font-size - 0.375);
+}
+
+/* SMALL BUTTON */
+.btn-sm {
+ font-size: (@font-size - 0.25);
+}
+
+/* LARGE BUTTON */
+.btn-lg {
+  font-size: (@font-size + 0.5);
+}
+
+/* DISABLED BUTTON */
+.btn.disabled,
+.btn.disabled:hover,
+.btn.disabled:active {
+  background: @button-disabled-background;
+  color: @button-disabled-text;
+  cursor: default;
+}

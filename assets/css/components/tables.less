@@ -1,0 +1,150 @@
+@table-zebra-striping: @off-white;
+@table-row-hover: @light-grey;
+
+/* 
+TABLES
+*/
+
+table,
+.table {
+  margin-bottom: (@margin + 0.5);
+  background: @primary-background;
+}
+
+th,
+.table th,
+.table th {
+  padding: @padding;
+  line-height: @base-line-height;
+}
+
+td,
+.table td,
+.table td {
+	padding: @padding;
+  line-height: @base-line-height;
+  vertical-align: middle;
+  .transition;
+}
+
+caption {
+  font-weight: bold;
+  padding: @padding;
+  border: @border-size @border-type @border-color;
+  border-bottom: 0;
+}
+
+/* adds zebra striping */
+.table-striped tbody > tr:nth-child(odd) {
+	background: @table-zebra-striping;
+}
+
+/* enables a hover state on table rows within the tbody */
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th,
+.table-striped.table-hover tbody tr:hover td,
+.table-striped.table-hover tbody tr:hover th {
+  background-color: @table-row-hover;
+  .transition;
+}
+
+/* makes tables more condensed by cutting cell padding in half */
+.table-condensed th,
+.table-condensed td,
+.table-striped.table-condensed td,
+.table-striped.table-condensed th {
+  padding: (@padding - 0.5);
+  font-size: (@font-size - 0.143);
+}
+
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: transparent;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: @border-color @border-size @border-type;
+  border-top: 0;
+}
+
+th.center,
+td.center {
+  text-align: center;
+} 
+
+th.right,
+td.right {
+  text-align: right;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.table > thead > tr > td.success, 
+.table > tbody > tr > td.success, 
+.table > tfoot > tr > td.success, 
+.table > thead > tr > th.success, 
+.table > tbody > tr > th.success, 
+.table > tfoot > tr > th.success, 
+.table > thead > tr.success > td, 
+.table > tbody > tr.success > td, 
+.table > tfoot > tr.success > td, 
+.table > thead > tr.success > th, 
+.table > tbody > tr.success > th, 
+.table > tfoot > tr.success > th {
+  background: @green2;
+  border-color: @green2;
+  color: @white;
+}
+
+.table > thead > tr > td.danger, 
+.table > tbody > tr > td.danger, 
+.table > tfoot > tr > td.danger, 
+.table > thead > tr > th.danger, 
+.table > tbody > tr > th.danger, 
+.table > tfoot > tr > th.danger, 
+.table > thead > tr.danger > td, 
+.table > tbody > tr.danger > td, 
+.table > tfoot > tr.danger > td, 
+.table > thead > tr.danger > th, 
+.table > tbody > tr.danger > th, 
+.table > tfoot > tr.danger > th {
+  background: @red2;
+  border-color: @red2;
+  color: @white;
+}
+
+.table > thead > tr > td.warning, 
+.table > tbody > tr > td.warning, 
+.table > tfoot > tr > td.warning, 
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning, 
+.table > tfoot > tr > th.warning, 
+.table > thead > tr.warning > td, 
+.table > tbody > tr.warning > td, 
+.table > tfoot > tr.warning > td, 
+.table > thead > tr.warning > th, 
+.table > tbody > tr.warning > th, 
+.table > tfoot > tr.warning > th {
+  background: @yellow2;
+  border-color: @yellow2;
+  color: @white;
+}
+
+.table > thead > tr > td.active, 
+.table > tbody > tr > td.active, 
+.table > tfoot > tr > td.active, 
+.table > thead > tr > th.active, 
+.table > tbody > tr > th.active, 
+.table > tfoot > tr > th.active, 
+.table > thead > tr.active > td, 
+.table > tbody > tr.active > td, 
+.table > tfoot > tr.active > td, 
+.table > thead > tr.active > th, 
+.table > tbody > tr.active > th, 
+.table > tfoot > tr.active > th {
+  background-color: @off-white;
+  border-color: @border-color;
+}

@@ -1,0 +1,31 @@
+/*
+LIST GROUP
+*/
+
+ul.list-group {
+	margin-left: 0;
+}
+
+.list-group-item {
+	padding-top: @padding;
+	padding-right: (@padding * 2);
+	padding-bottom: @padding;
+	padding-left: @padding;
+	background: @primary-background;
+	border: @border-size @border-type @border-color;
+}
+
+a.list-group-item.active,
+a.list-group-item.active:hover {
+	background-color: @blue;
+	color: @white;
+}
+
+a.list-group-item.active .list-group-item-text {
+	color: @white;
+}
+
+a.list-group-item:hover, 
+a.list-group-item:focus {
+	background: @secondary-background;
+}

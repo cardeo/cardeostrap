@@ -1,0 +1,19 @@
+/* 
+THUMBNAILS
+*/
+
+.thumbnail, .img-thumbnail {
+	border: @border-size @border-type @border-color;
+
+	.round-corners;
+	.transition;
+}
+
+.thumbnail .caption p:last-child {
+	margin-bottom: 0;
+}
+
+a.thumbnail:hover, a.thumbnail:focus {
+	border: @border-size @border-type @border-focus;
+
+}

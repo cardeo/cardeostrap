@@ -1,0 +1,86 @@
+@navbar-background-color: @secondary-background;
+@navbar-active-text: @white;
+@navbar-active-background-color: @blue;
+
+@navbar-brand-text: @light-text;
+@navbar-brand-text-hover: @dark-grey;
+
+@navbar-link-color: @grey;
+@navbar-link-color-hover: @white;
+@navbar-link-background-hover: @blue;
+
+@navbar-dropdown-border: @border-type @border-color @border-size;
+@navbar-dropdown-button-text: @white;
+@navbar-dropdown-button-active-background: @blue;
+
+@navbar-inverse-background: @inverse-background;
+@navbar-inverse-dropdown-button-active-background: @blue;
+
+/*
+NAVBARS
+*/
+
+.navbar {
+  background: @navbar-background-color;
+}
+
+.navbar-nav > .active > a, 
+.navbar-nav > .active > a:hover, 
+.navbar-nav > .active > a:focus {
+  color: @navbar-active-text;
+  background: @navbar-active-background-color;
+}
+
+.navbar-brand a {
+  color: @navbar-brand-text;
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus {
+  color: @navbar-brand-text-hover;
+}
+
+.navbar-nav > li > a {
+  color: @navbar-link-color;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: @navbar-link-color-hover;
+  background: @navbar-link-background-hover;
+}
+
+.navbar-form-width {
+  width: 200px;
+}
+
+ul.navbar-nav {
+  margin-left: 0;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  border: @navbar-dropdown-border;
+}
+
+.navbar-nav .dropdown-menu .divider {
+  border-color: @border-color;
+  background: @border-color;
+}
+
+.navbar-nav > .open > a, 
+.navbar-nav > .open > a:hover, 
+.navbar-nav > .open > a:focus {
+  color: @navbar-dropdown-button-text;
+  background-color: @navbar-dropdown-button-active-background;
+}
+
+.navbar-inverse {
+  background: @navbar-inverse-background;
+}
+
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: @navbar-inverse-dropdown-button-active-background;
+}
+

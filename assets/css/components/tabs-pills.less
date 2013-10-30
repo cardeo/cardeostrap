@@ -1,0 +1,83 @@
+@tabs-border-radius: 5px;
+@tabs-background-hover: @off-white;
+
+@pills-text: @white;
+@pills-background: @blue;
+
+/* 
+TABS & PILLS
+*/
+
+.nav-tabs {
+  border-bottom: @border-type @border-size @border-color;
+}
+
+ul.nav-tabs,
+ul.nav-pills {
+  margin: 0;
+}
+
+.nav-tabs > li > a {
+  border: @border-type @border-color transparent;
+
+  -webkit-border-top-left-radius: @tabs-border-radius;
+  -webkit-border-top-right-radius: @tabs-border-radius;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topleft: @tabs-border-radius;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topright: @tabs-border-radius;
+  -moz-border-radius-bottomright: 0;
+  border-top-left-radius: @tabs-border-radius;
+  border-top-right-radius: @tabs-border-radius;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  .transition;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+  color: @primary-text;
+  background: @primary-background;
+  border-top: @border-type @border-size @border-color;
+  border-left: @border-type @border-size @border-color;
+  border-right: @border-type @border-size @border-color;
+  border-bottom: @border-type @border-size transparent;
+}
+
+.nav-tabs > li > a:hover {
+  border-color: none;
+  border-bottom-color: @border-color;
+}
+
+.nav-tabs .dropdown-menu,
+.nav-pills .dropdown-menu {
+  border-color: @border-color;
+}
+
+.nav-tabs .dropdown-menu .divider,
+.nav-pills .dropdown-menu .divider {
+  border-color: @border-color;
+  background: @border-color;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus {
+  background-color: @tabs-background-hover;
+
+  .transition;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover {
+  color: @pills-text;
+  background-color: @pills-background;
+
+  .transition;
+}
+
+.nav-tabs.nav-justified > li > a {
+  border-bottom: @border-type @border-size @border-color;
+}

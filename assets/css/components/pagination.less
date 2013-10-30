@@ -1,0 +1,40 @@
+/*
+PAGINATION
+*/
+
+.pagination ul {
+  margin-bottom: 0;
+  margin-left: 0;
+
+  .round-corners;
+  .box-shadow;
+}
+
+.pagination ul > li > a, 
+.pagination ul > li > span {
+  border: @border-size @border-type @border-color;
+  border-left: 0;
+  padding: 0em @padding;
+  line-height: (@base-line-height + 1);
+  min-height: (@font-size + 1.571);
+}
+
+.pagination ul > li:first-child > a, 
+.pagination ul > li:first-child > span {
+  border-left: @border-size @border-type @border-color;
+
+  -webkit-border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  border-bottom-left-radius: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -moz-border-topleft-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.pagination ul > li > a:hover, 
+.pagination ul > .active > a, 
+.pagination ul > .active > span {
+  text-decoration: none;
+  background: @primary-link-color-hover;
+  color: @inverse-text;
+}

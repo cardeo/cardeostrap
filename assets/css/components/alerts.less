@@ -1,0 +1,66 @@
+/* 
+ALERTS
+*/
+
+@alert-default-text: @white;
+@alert-default-background: @yellow;
+@alert-danger-background: @red;
+@alert-success-background: @green;
+@alert-info-background: @teal;
+
+.alert,
+.alert-danger,
+.alert-success,
+.alert-info,
+.alert-block {
+ color: @alert-default-text;
+ text-shadow: none;
+ border: 0;
+ padding: @padding;
+ margin-bottom: @margin;
+ .round-corners;
+}
+
+.alert {
+	background-color: @alert-default-background;
+}
+
+.alert-danger {
+	background-color: @alert-danger-background;
+}
+
+.alert-success {
+	background-color: @alert-success-background;
+}
+
+.alert-info {
+	background-color: @alert-info-background;
+}
+
+.alert .close {
+  position: static;
+}
+
+.alert p:last-child {
+	margin-bottom: 0;
+}
+
+.alert a {
+	color: @yellow2;
+}
+
+.alert-danger a {
+	color: @red2;
+}
+
+.alert-success a {
+	color: @green2;
+}
+
+.alert-info a {
+	color: @teal2;
+}
+
+.alert a:hover {
+	color: @white;
+}

@@ -1,0 +1,123 @@
+/*
+PANELS
+*/
+
+@panel-text: @white; 
+
+@primary-panel-background: @blue;
+@primary-panel-border-color: @blue;
+
+@success-panel-background: @green;
+@success-panel-border-color: @green;
+
+@warning-panel-background: @yellow;
+@warning-panel-border-color: @yellow;
+
+@danger-panel-background: @red;
+@danger-panel-border-color: @red;
+
+@info-panel-background: @teal;
+@info-panel-border-color: @teal;
+
+
+.panel {
+	margin-bottom: @margin;
+	background-color: @primary-background;
+	border: @border-size @border-type @border-color;
+
+	.round-corners;
+	.box-shadow;
+}
+
+.panel-heading {
+	padding: @padding;
+	background: @secondary-background;
+	border-bottom: @border-size @border-type @border-color;
+
+	-moz-border-radius: 5px 5px 0px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.panel-title {
+	font-size: @font-size;
+}
+
+.panel-footer {
+	padding: @padding;
+	background-color: @secondary-background;
+	border-top: @border-size @border-type @border-color;
+
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.panel .list-group .list-group-item:first-child {
+	-moz-border-radius: 0;
+	border-radius: 0;
+}
+
+.panel .list-group .list-group-item {
+	border-width: @border-size 0;
+}
+
+.list-group-item:last-child {
+	margin-bottom: 0;
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.panel .list-group .list-group-item:last-child {
+	border-bottom: 0;
+}
+
+.panel-primary {
+	border-color: @primary-panel-border-color;
+}
+
+.panel-primary .panel-heading {
+	color: @panel-text;
+	background: @primary-panel-background;
+	border-color: @primary-panel-border-color;
+}
+
+.panel-success {
+	border-color: @success-panel-border-color;
+}
+
+.panel-success .panel-heading {
+	color: @panel-text;
+	background-color: @success-panel-background;
+	border-color: @success-panel-border-color;
+}
+
+.panel-warning {
+	border-color: @warning-panel-border-color;
+}
+
+.panel-warning .panel-heading {
+	color: @panel-text;
+	background-color: @warning-panel-background;
+	border-color: @warning-panel-border-color;
+}
+
+.panel-danger {
+	border-color: @danger-panel-border-color;
+}
+
+.panel-danger .panel-heading {
+	color: @panel-text;
+	background-color: @danger-panel-background;
+	border-color: @danger-panel-border-color;
+}
+
+.panel-info {
+	border-color: @info-panel-border-color;
+}
+
+.panel-info .panel-heading {
+	color: @panel-text;
+	background-color: @info-panel-background;
+	border-color: @info-panel-border-color;
+}
+
+
