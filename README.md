@@ -1,5 +1,4 @@
-CardeoStrap
-==============
+# CardeoStrap
 
 ### A flat theme for Twitter Bootstrap 3
 
