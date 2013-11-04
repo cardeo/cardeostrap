@@ -11,16 +11,6 @@
 <script src='assets/js/bootstrap.min.js'></script>
 <script src='assets/js/respond.js'></script>
 <script src='assets/js/app.js'></script> 
-  
-</head>
-
-<body>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1><a href="#">Style Guide</a></h1>
-    </div>
-  </div>
 
 <style type="text/css">
 /* for demo only */
@@ -47,70 +37,79 @@ h1#demoheader
  {
   display: block;
 }
+
+.color-padding div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 </style>
+</head>
 
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="sr-only">Toggle Navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-  
-    <a class="navbar-brand" href="#page-top">CardeoStrap</a>
+<body>
+  <div class="navbar navbar-default" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    
+      <a class="navbar-brand" href="#page-top">CardeoStrap</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-responsive-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav1">
+            CSS
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="nav1">
+            <li role="menuitem"><a href="#nav-type">Typography</a></li>
+            <li role="menuitem"><a href="#nav-tables">Tables</a></li>
+            <li role="menuitem"><a href="#nav-forms">Forms</a></li>
+            <li role="menuitem"><a href="#nav-colors">Colors</a></li>
+            <li role="menuitem"><a href="#nav-buttons">Buttons</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav2">
+            Components
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="nav2">
+            <li role="menuitem"><a href="#nav-dropdowns">Dropdowns</a></li>
+            <li role="menuitem"><a href="#nav-tabs">Tabs &amp; Pills</a></li>
+            <li role="menuitem"><a href="#nav-navbars">Navbar</a></li>
+            <li role="menuitem"><a href="#nav-paging">Paging</a></li>
+            <li role="menuitem"><a href="#nav-labels">Labels</a></li>
+            <li role="menuitem"><a href="#nav-alerts">Alerts</a></li>
+            <li role="menuitem"><a href="#nav-thumbs">Thumbnails</a></li>
+            <li role="menuitem"><a href="#nav-media">Media Object</a></li>
+            <li role="menuitem"><a href="#nav-list-groups">List Groups</a></li>
+            <li role="menuitem"><a href="#nav-panels">Panels</a></li>
+            <li role="menuitem"><a href="#nav-wells">Wells</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav3">
+            Javascript
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="nav3">
+            <li role="menuitem"><a href="#nav-modal">Modal</a></li>
+            <li role="menuitem"><a href="#nav-tooltip">Tooltip</a></li>
+            <li role="menuitem"><a href="#nav-accordion">Accordion</a></li>
+            <li role="menuitem"><a href="#nav-carousel">Carousel</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 
-  <div class="collapse navbar-collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav1">
-          CSS
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="nav1">
-          <li role="menuitem"><a href="#nav-type">Typography</a></li>
-          <li role="menuitem"><a href="#nav-tables">Tables</a></li>
-          <li role="menuitem"><a href="#nav-forms">Forms</a></li>
-          <li role="menuitem"><a href="#nav-buttons">Buttons</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav2">
-          Components
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="nav2">
-          <li role="menuitem"><a href="#nav-dropdowns">Dropdowns</a></li>
-          <li role="menuitem"><a href="#nav-tabs">Tabs &amp; Pills</a></li>
-          <li role="menuitem"><a href="#nav-navbars">Navbar</a></li>
-          <li role="menuitem"><a href="#nav-paging">Paging</a></li>
-          <li role="menuitem"><a href="#nav-labels">Labels</a></li>
-          <li role="menuitem"><a href="#nav-alerts">Alerts</a></li>
-          <li role="menuitem"><a href="#nav-thumbs">Thumbnails</a></li>
-          <li role="menuitem"><a href="#nav-media">Media Object</a></li>
-          <li role="menuitem"><a href="#nav-list-groups">List Groups</a></li>
-          <li role="menuitem"><a href="#nav-panels">Panels</a></li>
-          <li role="menuitem"><a href="#nav-wells">Wells</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav3">
-          Javascript
-          <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu" aria-labelledby="nav3">
-          <li role="menuitem"><a href="#nav-modal">Modal</a></li>
-          <li role="menuitem"><a href="#nav-tooltip">Tooltip</a></li>
-          <li role="menuitem"><a href="#nav-accordion">Accordion</a></li>
-          <li role="menuitem"><a href="#nav-carousel">Carousel</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-lg-12 page-header">
       <h1 id="page-top">Style Guide</h1>
@@ -603,6 +602,45 @@ body {
       </div>
     </div><!-- right form col end //-->
   </div><!-- forms .row end //-->
+
+  <!-- COLORS //-->
+  <div class="row">
+    <div class="col-lg-12 page-header">
+      <h2 id="nav-colors">Colors</h2>
+
+    </div>
+  </div>
+
+  <div class="row color-padding">
+    <div class="col-lg-3 center red-bg">.red</div>
+    <div class="col-lg-3 center red2-bg">.red2</div>
+    <div class="col-lg-3 center blue-bg">.blue</div>
+    <div class="col-lg-3 center blue2-bg">.blue2</div>
+  </div>
+  <div class="row color-padding">
+    <div class="col-lg-3 center orange-bg">.orange</div>
+    <div class="col-lg-3 center orange2-bg">.orange2</div>
+    <div class="col-lg-3 center teal-bg">.teal</div>
+    <div class="col-lg-3 center teal2-bg">.teal2</div>
+  </div>
+  <div class="row color-padding">
+    <div class="col-lg-3 center yellow-bg">.yellow</div>
+    <div class="col-lg-3 center yellow2-bg">.yellow2</div>
+    <div class="col-lg-3 center green-bg">.green</div>
+    <div class="col-lg-3 center green2-bg">.green2</div>
+  </div>
+  <div class="row color-padding">
+    <div class="col-lg-3 center purple-bg">.purple</div>
+    <div class="col-lg-3 center purple2-bg">.purple2</div>
+    <div class="col-lg-3 center steel-grey-bg">.steel-grey</div>
+    <div class="col-lg-3 center steel-grey2-bg">.steel-grey2</div>
+  </div>
+  <div class="row color-padding">
+    <div class="col-lg-3 center off-white-bg">.off-white</div>
+    <div class="col-lg-3 center light-grey-bg">.light-grey</div>
+    <div class="col-lg-3 center grey-bg">.grey</div>
+    <div class="col-lg-3 center medium-grey-bg">.medium-grey</div>
+  </div>
 
   <!-- BUTTONS //-->
   <div class="row">

@@ -56,6 +56,15 @@ NAVBARS
 
 .navbar-nav > li > a {
   color: @navbar-link-color;
+  padding-top: (@padding / 2);
+  padding-bottom: (@padding / 2);
+  font-size: (@font-size - 0.125);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: @heading-copy;
+  margin-left: 2px;
+
+  .round-corners;
 }
 
 .navbar-default .navbar-nav > .active > a, 
@@ -69,8 +78,6 @@ NAVBARS
 .navbar-default .navbar-nav > li > a:focus {
   color: @navbar-link-color-hover;
   background: @navbar-link-background-hover;
-
-  .transition;
 }
 
 .navbar-default .navbar-nav > .open > a, 
@@ -90,6 +97,7 @@ NAVBARS
 
 ul.navbar-nav {
   margin-left: 0;
+  margin-top: 8px;
 }
 
 .navbar-nav > li > .dropdown-menu {
