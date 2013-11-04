@@ -205,14 +205,14 @@ pre {
 .text-info {
   color: #1abc9c;
 }
+.center {
+  text-align: center;
+}
 /*******************************************************
 02. LAYOUT
 
 Styles specific to your layout or website
 *******************************************************/
-.container-fluid {
-  margin: 0 4em;
-}
 /*******************************************************
 03. MODULES
 
@@ -522,6 +522,9 @@ BUTTONS
   -moz-transition: background 0.1s linear;
   -webkit-transition: background 0.1s linear;
   transition: background 0.1s linear;
+}
+.btn:focus {
+  color: #ffffff;
 }
 /* DEFAULT BUTTON */
 .btn-default,
